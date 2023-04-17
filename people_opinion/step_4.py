@@ -7,7 +7,8 @@ with open('lem_text_from_people.csv', 'r', encoding='UTF-8') as file:
 # print(list_lem_words)
 print(len(list_lem_words))
 
-stop_words = ['Sputnik', 'тема']
+stop_words = ["Sputnik", "тема", "@content/html/head/meta[@name='og", "title']/", "description']", "быть", "заполнить", "чтобы", "Радио",
+              "скриншотОтправить", "поиск", "быть"]
 list_unique_words = []
 for word in list_lem_words:
     if word not in list_unique_words:
